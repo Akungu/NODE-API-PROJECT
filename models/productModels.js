@@ -3,7 +3,7 @@ const productSchema=mongoose.Schema(
     {
         name:{
             type: String,
-            required:[true,"please input product name"]
+            required:[true,"please provide a product name"]
         },
         quantity:{
          type: Number,
@@ -12,7 +12,7 @@ const productSchema=mongoose.Schema(
      },
      price:{
         type:Number,
-        required:true,
+        required:[true,"please provide a product price"]
      },
      image:{
         type:String,
